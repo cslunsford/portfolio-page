@@ -1,0 +1,90 @@
+:root {
+    --gray-color:rgba(0, 0, 0, 0.5);
+    --nav-font: Arial; 
+}
+
+.hero-image {
+    background-image:linear-gradient(rgba(110, 110, 110, 0.5), rgba(188, 188, 188, 0.5)), url(https://media.istockphoto.com/id/1293539824/photo/abstract-blue-background-with-grunge-texture-and-white-geometric-circles-and-dots-in-old.webp?b=1&s=170667a&w=0&k=20&c=AoPhe0EWiR0uTdYUmuE4JbP1fcIsfRLA-PEwPHlKlaM=);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: relative;
+    border: solid;
+    border-color: var(--gray-color);
+    border-width: 10px;
+    margin: -10px;
+}
+
+.propic {
+    display:flex;
+    justify-content:flex-start;
+    width: 100px;
+    height: 135px;
+    border: solid;
+    border-color: var(--gray-color);
+    border-width: 5px;
+    border-radius: 50%;
+    margin: 10px 0px -120px 10px;
+}
+
+.hero-image h1 {
+    color: var(--gray-color);
+    font-weight: bolder;
+    text-align: center;
+    font-family: var(--nav-font);
+    font-size: 200%;
+    padding-bottom: 20px;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.links-one {
+    color:var(--gray-color);
+    font-family: var(--nav-font);
+    font-size: 150%;
+    text-decoration:none;
+    border:groove;
+    border-width: 10px;
+    border-color: var(--gray-color);
+}
+
+.links-one:hover, .links-two:hover {
+    background-color:rgba(120, 120, 120, 0.5);
+    color: white;
+}
+
+nav h2 {
+    color: var(--gray-color);
+    font-family:var(--nav-font);
+    border-bottom: solid;
+    border-color: var(--gray-color);
+    border-width: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 5px;
+}
+
+.pgraph {
+    font-family: var(--nav-font);
+    font-size: 150%;
+    border: ridge;
+    border-width: 10px;
+    border-color:var(--gray-color);
+    padding: 10px;
+}
+
+.links-two {
+    background-color:rgba(0, 124, 169, 0.5);
+    border: ridge;
+    border-color: var(--gray-color);
+    border-width: 10px;
+    color: var(--gray-color);
+    text-decoration: none;
+    font-family: var(--nav-font);
+    font-size: 125%;
+    font-weight: bold;
+    padding: 5px;
+}
