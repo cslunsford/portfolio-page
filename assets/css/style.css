@@ -203,16 +203,36 @@ nav h2 {
     padding: 5px;
 }
 
-/*Changed the project links to row wrap when screen is less than 992px*/
-@media screen and (max-width: 992px){
+/*Changed the project links to row wrap when screen is less than 768px*/
+@media screen and (max-width: 768px){
     .projects {
         flex-flow: row wrap;
+        justify-content: space-evenly;
     }
 }
 
-/*Changed the font size of the "About Me" paragraph to 125% for screens less than 768px*/
+@media screen and (max-width: 768px){
+    .button-one {
+        left: 70px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .button-one a {
+        font-size: 110%;
+        
+    }
+}
+
+/*Reduced the font size for screens less than 768px*/
 @media screen and (max-width: 768px){
     .pgraph {
         font-size: 125%
+    }
+}
+
+@media screen and (max-width: 768px){
+    .links-one {
+        font-size: 100%;
     }
 }
