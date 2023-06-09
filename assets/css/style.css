@@ -1,8 +1,18 @@
+/*Created variables for commonly used colors and fonts*/
 :root {
     --gray-color:rgba(0, 0, 0, 0.5);
     --nav-font: Arial; 
+    --button-color: rgb(155, 155, 155, .5);
 }
 
+/*Added a background to the body*/
+body {
+    background:rgba(0, 124, 169, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+/*Styled the background image for the header nav links*/
 .hero-image {
     background-image:linear-gradient(rgba(110, 110, 110, 0.5), rgba(188, 188, 188, 0.5)), url(https://media.istockphoto.com/id/1293539824/photo/abstract-blue-background-with-grunge-texture-and-white-geometric-circles-and-dots-in-old.webp?b=1&s=170667a&w=0&k=20&c=AoPhe0EWiR0uTdYUmuE4JbP1fcIsfRLA-PEwPHlKlaM=);
     background-position: center;
@@ -15,18 +25,7 @@
     margin: -10px;
 }
 
-.propic {
-    display:flex;
-    justify-content:flex-start;
-    width: 100px;
-    height: 135px;
-    border: solid;
-    border-color: var(--gray-color);
-    border-width: 5px;
-    border-radius: 50%;
-    margin: 10px 0px -120px 10px;
-}
-
+/*Changed the color, font, and positioning of the header h1*/
 .hero-image h1 {
     color: var(--gray-color);
     font-weight: bolder;
@@ -36,12 +35,14 @@
     padding-bottom: 20px;
 }
 
+/*Added positioning and got rid of the bullet points for the nav links*/
 .hero-text {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
+/*Added color, font, and removed the underlining of the nav links*/
 .links-one {
     color:var(--gray-color);
     font-family: var(--nav-font);
@@ -52,11 +53,13 @@
     border-color: var(--gray-color);
 }
 
+/*Added a hover effect to the nav links*/
 .links-one:hover, .links-two:hover {
     background-color:rgba(120, 120, 120, 0.5);
     color: white;
 }
 
+/*Added color, font, and a bottom border to the h2s of each section*/
 nav h2 {
     color: var(--gray-color);
     font-family:var(--nav-font);
@@ -67,17 +70,128 @@ nav h2 {
     padding: 10px 0px 10px 5px;
 }
 
+/*Positioned and changed the size of picture*/
+.propic {
+    width: 100px;
+    height: 135px;
+    border: solid;
+    border-color: var(--gray-color);
+    border-width: 5px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/*Changed the font and color of the "About Me" paragraph and added a border*/
 .pgraph {
     font-family: var(--nav-font);
-    font-size: 150%;
+    font-size: 175%;
+    color: var(--gray-color);
     border: ridge;
     border-width: 10px;
     border-color:var(--gray-color);
     padding: 10px;
+    margin: 25px 25px 0px 25px;
+    display:flex;
 }
 
+/*Positioned the elements in the "My Projects" section and added borders, backgrounds, and fonts.*/
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-one {
+    display: flex;
+    flex-flow:row wrap;
+    position: relative;
+}
+
+.button-one {
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.button-one a {
+    font-size: 200%;
+    background: var(--button-color);
+    border-style: solid;
+    border-color: var(--gray-color);
+    border-width: 10px 10px 10px 0px;
+    color: white;
+    font-family:var(--nav-font);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-two {
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.button-two {
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 308px;
+    left: 16px;
+}
+
+.button-two a {
+    font-size: 110%;
+    background: var(--button-color);
+    border-style: solid;
+    border-color: var(--gray-color);
+    border-width: 10px 5px 10px 0px;
+    color: white;
+    font-family: var(--nav-font);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.button-three{
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.button-three a {
+    font-size: 110%;
+    background: var(--button-color);
+    border-style: solid;
+    border-color: var(--gray-color);
+    border-width: 10px 5px 10px 0px;
+    color: white;
+    font-family: var(--nav-font);
+    font-weight: bold;
+    text-decoration: none;
+}
+/*Added a hover effect to the links to my projects.*/
+.button-one a:hover{
+    background-color: rgb(155, 155, 155, 1);
+}
+
+.button-two a:hover{
+    background-color: rgb(155, 155, 155, 1);
+}
+
+.button-three a:hover {
+    background-color: rgb(155, 155, 155, 1);
+}
+
+/*Styled the "Contact Info links"*/
 .links-two {
-    background-color:rgba(0, 124, 169, 0.5);
+    background-color:var(--button-color);
     border: ridge;
     border-color: var(--gray-color);
     border-width: 10px;
@@ -87,4 +201,18 @@ nav h2 {
     font-size: 125%;
     font-weight: bold;
     padding: 5px;
+}
+
+/*Changed the project links to row wrap when screen is less than 992px*/
+@media screen and (max-width: 992px){
+    .projects {
+        flex-flow: row wrap;
+    }
+}
+
+/*Changed the font size of the "About Me" paragraph to 125% for screens less than 768px*/
+@media screen and (max-width: 768px){
+    .pgraph {
+        font-size: 125%
+    }
 }
