@@ -14,5 +14,5 @@ I used four pictures in the creation of the website found here:
 [Portfolio Project](https://cslunsford.github.io/module-two-challenge/)
 
 ## Screenshots of Webpage
-[Screenshot 1]()
-[Screenshot 2]()
+[Screenshot 1](https://github.com/cslunsford/module-two-challenge/blob/main/assets/images/Screenshot%202023-06-12%20at%202.07.19%20PM.png)
+[Screenshot 2](https://github.com/cslunsford/module-two-challenge/blob/main/assets/images/Screenshot%202023-06-12%20at%202.07.30%20PM.png)
