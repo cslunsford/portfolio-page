@@ -212,6 +212,12 @@ nav h2 {
 }
 
 @media screen and (max-width: 800px){
+    .project-one {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px){
     .button-one {
         left: 70px;
     }
