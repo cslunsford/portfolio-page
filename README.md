@@ -1,4 +1,4 @@
-# Module Two Challenge
+# Portfolio Page
 
 ## Description
 This webpage is a portfolio site that I made for myself. The purpose of the site is to give a brief description about me, display links to projects that I have worked on, and link my contact information. The site has three different sections after the header that can all be accessed through navigation links in the header. The about me section gives a short paragraph on my level of skill in coding and experience. The next section links to some of my projects and can be updated with future projects as I complete them. Finally, the contact info section at the bottom links to my GitHub, email address, and LinkedIn. I used HTML to add all of the content to the webpage and then styled the page using CSS.
