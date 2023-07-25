@@ -203,6 +203,11 @@ nav h2 {
     padding: 5px;
 }
 
+.burger-image {
+    height: 320px;
+    width: 280px;
+}
+
 /*Changed the project links to row wrap when screen is less than 800px*/
 @media screen and (max-width: 800px){
     .projects {
